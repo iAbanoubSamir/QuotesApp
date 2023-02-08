@@ -6,6 +6,6 @@ import com.abanoub.domain.repository.QuotesRepository
 
 class QuotesRepositoryImpl(private val apiService: QuotesApiService) : QuotesRepository {
 
-    override fun getQuotesFromAPI(): QuoteResponse = apiService.getQuotes()
+    override suspend fun getQuotesFromAPI(): QuoteResponse = apiService.getQuotes()
 
 }
