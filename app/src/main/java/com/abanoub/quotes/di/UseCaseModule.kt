@@ -3,6 +3,7 @@ package com.abanoub.quotes.di
 import com.abanoub.domain.repository.QuotesRepository
 import com.abanoub.domain.usecase.GetQuotesUseCase
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
@@ -10,6 +11,7 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 object UseCaseModule {
 
+    @Provides
     fun provideGetQuotesUseCase(quotesRepository: QuotesRepository): GetQuotesUseCase {
         return GetQuotesUseCase(quotesRepository)
     }
