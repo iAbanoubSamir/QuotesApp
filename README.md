@@ -14,16 +14,16 @@ An Android application that displays a list of quotes in a RecyclerView with the
 - Coroutines
 - Hilt
 - Retrofit
-<br>
-<br>
 ## API
 Built with Quotable API: [quotable-api github](https://github.com/lukePeavey/quotable)
+<br>
+<br>
 ## Screenshot
 <div align="center">
     <img src="/Screenshot.jpg?raw=true" width="300px height="300px"</img> 
 </div>
-<br>
-<br>
+
+
 ### License
 <pre><code>Copyright 2023 Abanoub Samir
 Licensed under the Apache License, Version 2.0 (the "License");
